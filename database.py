@@ -6,7 +6,6 @@ from model import Item
 class ItemDAO:
     def __init__(self, db_name: str = "itens.db"):
         self.DB_NAME = db_name
-        self._criar_tabela()
 
     def get_connection(self):
         conn = sqlite3.connect(self.DB_NAME)
